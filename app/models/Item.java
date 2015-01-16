@@ -16,8 +16,10 @@ public class Item extends Model {
     private String id;
     private String name;
     private String price;
-    private String image_path;
-    private String category_id;
+    private boolean featured;
+    private boolean recommended;
+    private String imagePath;
+    private String categoryId;
     private String insDate;
     private String updDate;
 
@@ -45,12 +47,20 @@ public class Item extends Model {
         this.price = price;
     }
 
-    public String getCategory_id() {
-        return category_id;
+    public String getImagePath() {
+        return imagePath;
     }
 
-    public void setCategory_id(String category_id) {
-        this.category_id = category_id;
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
+
+    public String getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(String categoryId) {
+        this.categoryId = categoryId;
     }
 
     public String getInsDate() {
@@ -69,15 +79,26 @@ public class Item extends Model {
         this.updDate = updDate;
     }
 
-    public String getImage_path() {
-        return image_path;
-    }
-
-    public void setImage_path(String image_path) {
-        this.image_path = image_path;
-    }
-
     public static long getSerialversionuid() {
         return serialVersionUID;
+    }
+
+    public static Finder<Integer, Item> find = new Finder<Integer, Item>(
+            Integer.class, Item.class);
+
+    public boolean isFeatured() {
+        return featured;
+    }
+
+    public void setFeatured(boolean featured) {
+        this.featured = featured;
+    }
+
+    public boolean isRecommended() {
+        return recommended;
+    }
+
+    public void setRecommended(boolean recommended) {
+        this.recommended = recommended;
     }
 }

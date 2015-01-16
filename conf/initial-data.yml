@@ -1,0 +1,51 @@
+#Item
+- &1 !!models.Item
+    id: "1" 
+    name: "name 1" 
+    price:  "1"
+    featured: false
+    recommended: true 
+    imagePath: ""
+    categoryId: "1"
+    insDate: "" 
+    updDate: ""
+- &2 !!models.Item
+    id: "2" 
+    name: "name 2" 
+    price:  "2"
+    featured: false
+    recommended: true 
+    imagePath: ""
+    categoryId: "1"
+    insDate: "" 
+    updDate: ""
+- &3 !!models.Item
+    id: "3" 
+    name: "name 3" 
+    price:  "3"
+    featured: false
+    recommended: true 
+    imagePath: ""
+    categoryId: "1"
+    insDate: "" 
+    updDate: ""
+- &4 !!models.Item
+    id: "4" 
+    name: "name 4" 
+    price:  "4"
+    featured: false
+    recommended: true 
+    imagePath: ""
+    categoryId: "1"
+    insDate: "" 
+    updDate: ""
+- &5 !!models.Item
+    id: "5" 
+    name: "name 5" 
+    price:  "5"
+    featured: false
+    recommended: true 
+    imagePath: ""
+    categoryId: "1"
+    insDate: "" 
+    updDate: ""
